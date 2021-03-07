@@ -1,0 +1,7 @@
+<p>dashboard works!</p>
+<div id="dashboardContainer">
+    <div routerLink="pokemon/2" id="pokeCard" *ngFor="let pokemon of pokemons">
+        <h5>{{pokemon.name}}</h5>
+        <img [src]="getImageUrl(pokemon.url)" />
+    </div>
+</div>
